@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Wireframe - Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="">Inicio</li>
-            <li><a href="">Sobre mí</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <div class="portrait-grid">
-        <div class="portrait-text">
-            <p>INGENIERO EN MULMEDIA</p>
-            <p>Tagline</p>
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">N</span>
+            <span class="logo-text">NOMBRE</span>
         </div>
-        <div class="portrait-image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_tqphbDzoJkN1BZmVUa9_-JxL9ZQefAlBnPa8UbIPqlzuogJ1hE2tBk&s=10" alt="Retrato de la persona">
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero / Principal -->
+    <section class="hero-section">
+        <div class="hero-left">
+            <h1 class="hero-title">INGENIERO EN MULTIMEDIA - COLOMBIA</h1>
+            <p class="hero-tagline">Haciendo que la forma siga la emoción.</p>
+            <p class="hero-description">Diseño identidades, interfaces y experiencias digitales para proyectos que se niegan a ser como los demás.</p>
         </div>
-    </div>
+        <div class="hero-right">
+            <img src="https://uninpahu.edu.co/wp-content/uploads/2024/02/ATENCION-11.png" alt="">
+        </div>
+    </section>
+
+    <section class="section-title-banner">
+        <h2>Trabajos Realizados</h2>
+    </section>
+
+    <!-- Sección de Proyectos (Tarjetas) -->
+    <section class="projects-container">
+        <!-- Tarjeta 1 -->
+        <article class="project-card">
+            <div class="image-placeholder">
+                <img src="https://img.magnific.com/psd-gratis/plantilla-diseno-interiores-diseno-plano_23-2150031565.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="project-type">Tipo de proyecto</span>
+                <h3 class="project-title">Proyecto 1</h3>
+                <p class="project-desc">Descripcion del proyecto</p>
+            </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="project-card">
+            <div class="image-placeholder">
+                <img src="https://img.magnific.com/psd-gratis/plantilla-diseno-interiores-diseno-plano_23-2150031565.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="project-type">Tipo de proyecto</span>
+                <h3 class="project-title">Proyecto 2</h3>
+                <p class="project-desc">Descripcion del proyecto</p>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="project-card">
+            <div class="image-placeholder">
+                <img src="https://img.magnific.com/psd-gratis/plantilla-diseno-interiores-diseno-plano_23-2150031565.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <span class="project-type">Tipo de proyecto</span>
+                <h3 class="project-title">Proyecto 3</h3>
+                <p class="project-desc">Descripcion del proyecto</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Banner divisor -->
+    <div class="divider-banner"></div>
+
+    <!-- Sección de Contacto y Formulario -->
+    <section class="contact-section">
+        <!-- Información de Contacto -->
+        <div class="contact-info">
+            <span class="info-label">CONTACTO</span>
+            <p class="info-tagline">¡Hagamos realidad tu próximo proyecto!</p>
+            
+            <div class="info-group">
+                <span class="info-label">E-MAIL</span>
+                <p class="info-text">ingenieromultimedia@email.com</p>
+            </div>
+
+            <div class="info-group">
+                <span class="info-label">TELEFONO</span>
+                <p class="info-text">+1 456 3453 3453</p>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-wrapper">
+            <span class="info-label">FORMULARIO</span>
+            <form class="contact-form">
+                <div>
+                    <label for="nombre" class="form-label">NOMBRE</label>
+                    <input type="text" id="nombre" class="form-input" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label for="email" class="form-label">E-MAIL</label>
+                    <input type="email" id="email" class="form-input" placeholder="Tu e-mail">
+                </div>
+                <div>
+                    <label for="mensaje" class="form-label">MENSAJE</label>
+                    <textarea id="mensaje" class="form-input" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="form-button">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
 </body>
-
 </html>
